@@ -13,15 +13,6 @@ max1 = int(input('Введите MAX заданного диапазона: '))
 min1 = int(input('Введите MIN заданного диапазона: '))
 print(arr)
 
-'''
-for i in arr:
-    if i >= min1 and i <= max1:
-        print(arr.index(i), end=' ')
-'''
-
-result_arr = []
-for i in arr:
-    if i >= min1 and i <= max1:
-        result_arr.append(arr.index(i))
-
-print(result_arr)
+for i in range(len(arr)):
+    if arr[i] >= min1 and arr[i] <= max1:
+        print(i, end=' ')
